@@ -16,6 +16,7 @@
         <module>spring-v2.0</module>
         <module>spring-v3.0</module>
         <module>spring-v4.0</module>
+        <module>spring-v5.0</module>
     </modules>
 
     <properties>
