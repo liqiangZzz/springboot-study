@@ -1,4 +1,4 @@
-package com.lq.sevice;
+package com.lq.service;
 
 /**
  * @ClassName UserService

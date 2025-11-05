@@ -1,4 +1,4 @@
-package com.lq.sevice;
+package com.lq.service;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
