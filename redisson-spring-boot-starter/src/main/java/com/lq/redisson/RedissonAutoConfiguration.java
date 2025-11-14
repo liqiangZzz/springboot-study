@@ -22,19 +22,20 @@ public class RedissonAutoConfiguration {
 
     /**
      * RedissonClient:操作Redis的核心对象
-     *     将该对象注入到容器中
-     *     需要连接Redis 服务， host  port
+     * 将该对象注入到容器中
+     * 需要连接Redis 服务， host  port
+     *
      * @return
      */
     @Bean
-    public RedissonClient redissonClient(RedissonProperties redissonProperties){
+    public RedissonClient redissonClient(RedissonProperties redissonProperties) {
         Config config = new Config();
         String prefix = "redis://";
-        if(redissonProperties.isSsl()){
+        if (redissonProperties.isSsl()) {
             prefix = "rediss://";
         }
         config.useSingleServer()
-                .setAddress(prefix+redissonProperties.getHost()+":"+redissonProperties.getPort())
+                .setAddress(prefix + redissonProperties.getHost() + ":" + redissonProperties.getPort())
                 .setTimeout(redissonProperties.getTimeout());
         return Redisson.create(config);
     }
