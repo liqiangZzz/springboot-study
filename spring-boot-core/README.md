@@ -1,0 +1,2 @@
+在AutoConfigurationImportSelector的源码中，会先扫描spring-autoconfiguration-metadata.properties文件，最后在扫描spring.factories对应的类时
+，会结合前面的元数据进行过滤
