@@ -2,7 +2,7 @@ package com.lq.service;
 
 /**
  * @ClassName ProductService
- * @Description
+ * @Description 产品服务接口
  * @Author liqiang
  * @Date 2025/11/7 17:47
  */
